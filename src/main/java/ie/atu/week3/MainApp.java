@@ -1,0 +1,17 @@
+package ie.atu.week3;
+import java.util.Scanner;
+public class MainApp {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        // Create an instance of Calculator
+        Calculator calc = new Calculator();
+        System.out.println("Simple Calculator - Subtract Two Numbers");
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+        int result = calc.subtract(a, b);
+        System.out.println("Result: " + result);
+        sc.close();
+    }
+}
